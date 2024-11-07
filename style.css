@@ -1,0 +1,65 @@
+/* Define o estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para a imagem de fundo */
+body {
+    background-image: url('/fotos-ge.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para o conteúdo */
+.content {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+/* Design Responsivo - Ajustes para telas menores (móveis) */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Para melhorar a performance em dispositivos móveis */
+    }
+
+    .content {
+        width: 90%; /* Aumenta a largura para telas pequenas */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px; /* Ajuste do tamanho da fonte */
+    }
+
+    p {
+        font-size: 16px; /* Ajuste do tamanho da fonte */
+    }
+}
+
+/* Design Responsivo para telas muito pequenas (como celulares em modo retrato) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Menor tamanho para telas bem pequenas */
+    }
+
+    p {
+        font-size: 14px; /* Reduz a fonte do parágrafo */
+    }
+}
